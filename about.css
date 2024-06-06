@@ -1,0 +1,188 @@
+* {
+  font-family: "outfit";
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+header {
+  background-color: black;
+  padding: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 12px 20px;
+  padding: 6px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.hero span {
+  display: block;
+  position: relative;
+  font-size: 50px;
+  color: red;
+  font-family: cursive;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h3 {
+  margin-top: 0;
+  color: whitesmoke;
+}
+
+.social-connect {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  opacity: 0.5;
+  box-shadow: -5px -8px 4px 0px rgba(41, 33, 33, 1);
+}
+
+.box i {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background-color: red;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 20px;
+    padding: 10px;
+  }
+
+  nav a:hover {
+    background-color: red;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  .hero {
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .hero span {
+    font-size: 40px;
+  }
+
+  .social-connect {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 681px) {
+  .hero span {
+    font-size: 35px;
+  }
+
+  nav a {
+    margin: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero span {
+    font-size: 30px;
+  }
+
+  nav a {
+    margin: 6px;
+  }
+
+  .social-connect {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero span {
+    font-size: 25px;
+  }
+
+  nav a {
+    margin: 4px;
+  }
+
+  .social-connect {
+    margin-top: 2px;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    padding: 15px 0;
+  }
+}
