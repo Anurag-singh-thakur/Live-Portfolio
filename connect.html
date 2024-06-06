@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Connect</title>
+    <link rel="stylesheet" href="connect.css" />
+  </head>
+  <body>
+    <div class="hamburger-icon">&#9776;</div>
+    <div id="menu" class="menu">
+      <span class="close-icon">&times;</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">MySkills</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+    </div>
+    <div class="contact-form-container">
+      <h2>Let's Connect <i class="fa-solid fa-user-plus"></i></h2>
+      <form id="loginform" action="https://api.web3forms.com/submit" method="POST">
+        <div class="form-group">
+          <input type="hidden" name="access_key" value="3959e0cd-bd44-41d0-b288-3184c131ec50">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="contact-number">Contact Number</label>
+          <input type="tel" id="contact-number" name="contact-number" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button id="submit" type="submit" class="btn">
+          Submit  <i class="fa-solid fa-arrow-right"></i> 
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="https://kit.fontawesome.com/2d42cdd283.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</html>
