@@ -5,10 +5,12 @@ const closeIcon = document.querySelector('.close-icon');
 
 hamburgerIcon.addEventListener('click', () => {
   menu.style.display = 'block';
+  hamburgerIcon.style.display = 'none';
 });
 
 closeIcon.addEventListener('click', () => {
   menu.style.display = 'none';
+  hamburgerIcon.style.display = 'block';
 });
 
 
