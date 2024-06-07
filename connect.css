@@ -1,9 +1,19 @@
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-   background: url(connect.jpg);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ background: url(connect.jpg);
+ position: fixed;
+ top: 0;
+}
+#menu a{
+  text-decoration: none;
+}
+#menu
+{
+  right: 15px;
+  top: 17px;
 }
 
 .contact-form-container {
@@ -100,7 +110,10 @@ button:hover {
   }
   
   .close-icon {
-    float: left;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    float: right;
     cursor: pointer;
     scale: 1.5;
     display: flex;
